@@ -1,0 +1,39 @@
+.carterror {
+    background: var(--white);
+    text-align: center;
+    padding: 15px;
+    min-height: 450px;
+    border-radius: 10px;
+}
+
+.carterror_img {
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+.carterror h5 {
+    font-size: 18px;
+}
+
+.home_btn {
+    padding: 10px 15px;
+    background: var(--bluebg);
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.home_btn a {
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .carterror_img {
+        width: 100%;
+    }
+}

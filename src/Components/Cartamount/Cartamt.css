@@ -1,0 +1,45 @@
+.cartamt h3 {
+    font-size: 18px;
+    border-bottom: 1px solid var(--lightgrey);
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.cartamt_detail ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.cartamt_detail ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.free {
+    color: var(--combooffer);
+
+}
+
+
+
+
+.Totalamt {
+    display: flex;
+}
+
+.Totalamt h4,
+.Totalamt p {
+    font-size: 20px;
+}
+
+.cartprice {
+    position: sticky;
+    top: 1.5%;
+}
+
+.justSpacebetween {
+    justify-content: space-between !important;
+}

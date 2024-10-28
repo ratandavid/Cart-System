@@ -1,0 +1,107 @@
+.card {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    border-radius: 10px;
+    position: relative;
+    width: 23%;
+    margin: 0 8px 20px;
+    transition: .5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.img {
+    height: 300px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    padding: 10px 15px;
+    background: var(--white);
+    transform: translate3d(0px, 0px, 0px);
+    transition: .5s ease-in-out;
+}
+
+.card:hover .content {
+    transform: translate3d(0px, -15.2px, 0px)
+}
+
+.card .content .title {
+    display: inline-block;
+    font-weight: 600;
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+
+}
+
+.card .content .desc {
+    color: var(--lightgrey);
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+
+.card .content .price {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.carticon {
+    background: var(--bodybg);
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.carticon svg path {
+    fill: var(--black);
+}
+
+.comobo_offer {
+    color: var(--combooffer);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1250px) {
+    .card {
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 761px) {
+    .card {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

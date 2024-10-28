@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gap-3 {
+  gap: 10px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+  background: var(--bodybg)
+}
+
+:root {
+  --bodybg: #f1f3f6;
+  --bluebg: #2874f0;
+  --white: #fff;
+  --black: #000;
+  --lightgrey: #878787;
+  --combooffer: rgb(38, 165, 65);
+}
+
+p {
+  margin: 0
+}
+
+.mt-3 {
+  margin-top: .75rem !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.bgwhite {
+  background: var(--white);
+}
+
+
+.just-space-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.navigation {
+  background: var(--bluebg);
+  padding: 15px;
+}
+
+.navigation .nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 15px;
+}
+
+.navigation .nav-links li {
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation .nav-links li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navigation .nav-links li svg {
+  margin-right: 5px;
+}
+
+.nav-img {
+  width: 100px;
+}
+
+.nav-img img {
+  width: 100%;
+  margin: 0;
+}
+
+
+
+.col-lg-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 40.66666667%;
+}
+
+
+
+.cartproduct,
+.cartprice {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.dis_price {
+  text-decoration: line-through;
+  color: var(--lightgrey)
+}
+
+/* media query start here */
+@media only screen and (max-width: 600px) {
+  .d-none {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .col-7,
+  .col-5 {
+    width: 100%;
+  }
+
+  .cartprice {
+    margin-top: 10px;
   }
 }
